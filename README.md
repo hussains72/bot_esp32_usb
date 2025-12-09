@@ -1,4 +1,4 @@
-# ESP32 Micro-ROS Motor Controller (No Encoders)
+# ESP32 Micro-ROS Motor Controller 
 
 This project runs a ROS2-enabled motor controller on an ESP32 using the Arduino IDE. It receives velocity commands (`cmd_vel`) from ROS2 and controls two simple DC motors (no encoders required).
 
