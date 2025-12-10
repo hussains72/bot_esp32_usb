@@ -72,6 +72,14 @@ ros2 topic list
 - The ESP32 will blink its LED if there is a micro-ROS error.
 - Always press the RESET button after uploading code or starting the micro-ROS agent for reliable operation.
 
+### Freeing the Serial Port
+
+If you get an error that `/dev/ttyUSB0` is busy or locked, run the following command to kill any process using the port:
+```sh
+sudo fuser -k /dev/ttyUSB0
+```
+This will free the serial port so you can connect your ESP32.
+
 ---
 
 Main logic: [`move.ino`](move.ino)
